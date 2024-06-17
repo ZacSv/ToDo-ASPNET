@@ -1,3 +1,5 @@
+using Tarefas.Services;
+
 namespace Tarefas
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Tarefas
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<ICreateTaskServices, CreateTaskService>();
 
             var app = builder.Build();
 
