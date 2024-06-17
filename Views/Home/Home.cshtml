@@ -1,0 +1,34 @@
+﻿@page
+@model Tarefas.Views.Home.HomeModel
+@{
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Minha Lista de Tarefas</title>
+        <link rel="stylesheet" href="@Url.Content("~/css/homeStyles.css")" />
+    </head>
+
+    <body>
+        <div class="ogn-form">
+            <h1>Minha Lista de Tarefas</h1>
+            <form id="adicionarTarefa">
+                <label for="tituloTarefa">Título:</label>
+                <input type="text" id="tituloTarefa" name="titulo" required />
+
+                <label for="descricaoTarefa">Descrição:</label>
+                <textarea id="descricaoTarefa" name="descricao" rows="5"></textarea>
+
+                <label for="dataLimiteTarefa">Data Limite:</label>
+                <input type="date" id="dataLimiteTarefa" name="dataLimite" required />
+
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+            <ul id="listaTarefas"></ul>
+        </div>
+    </body>
+
+    </html>
+}

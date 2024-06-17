@@ -1,0 +1,88 @@
+﻿body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #2a629a;
+}
+
+.ogn-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff7f3e;
+}
+
+#adicionarTarefa {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column; /* Novo: Orienta��o vertical para os elementos do formul�rio */
+  align-items: center;
+  width: 300px; /* Ajusta a largura do formul�rio */
+  padding: 20px;
+  border-radius: 5px; /* Arredonda os cantos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border: 2px solid rgb(93, 92, 92); /* Borda preta de 2px */
+  margin-bottom: 20px;
+}
+
+#adicionarTarefa label {
+  margin-bottom: 5px;
+}
+
+#adicionarTarefa button {
+  background-color: #ff7f3e; /* Laranja queimado */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efeito hover */
+}
+
+#adicionarTarefa button:hover {
+  background-color: #d65f2e; /* Laranja queimado mais escuro */
+}
+
+#adicionarTarefa input,
+#adicionarTarefa textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#descricaoTarefa {
+  resize: none;
+  max-width: 11rem;
+  max-height: 5rem; /* Ajuste a altura desejada */
+}
+
+#novaTarefa {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#listaTarefas {
+  list-style: none;
+  padding: 0;
+}
+
+#listaTarefas li {
+  padding: 15px; /* Ajuste o espa�amento entre as tarefas */
+  border-bottom: 1px solid #ccc;
+  display: flex; /* Permite que os elementos dentro da li sejam organizados em linha */
+  justify-content: space-between; /* Distribui os elementos horizontalmente */
+  align-items: center; /* Alinha os elementos verticalmente */
+}
+
+#listaTarefas li.feito {
+  text-decoration: line-through;
+}
