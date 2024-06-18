@@ -4,11 +4,17 @@ using Tarefas.Services;
 
 namespace Tarefas.Controllers
 {
-    public class CreateTaskController : Controller
+    public class TaskController : Controller
     {
         private readonly ICreateTaskServices _createTaskService;
 
-        public CreateTaskController(ICreateTaskServices createTaskServices)
+
+        [HttpGet]
+        public IActionResult HomeTask()
+        {
+            return View();
+        }
+        public TaskController(ICreateTaskServices createTaskServices)
         {
             _createTaskService = createTaskServices;
         }
@@ -24,12 +30,7 @@ namespace Tarefas.Controllers
 
                 try
                 {
-                    if (ModelState.IsValid)
-                    {
-                        _createTaskService.CreateTask(task);
-                    }
-
-                    return View("Home");
+                    _createTaskService.CreateTask(task);
                 }
                 catch (Exception ex)
                 {
@@ -41,7 +42,7 @@ namespace Tarefas.Controllers
             {
                 Console.WriteLine("Algo deu errado, job abortado");
             }
-            return View("Home");
+            return View("HomeTask");
         }
     }
 }

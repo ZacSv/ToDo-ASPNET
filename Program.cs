@@ -31,7 +31,7 @@ namespace Tarefas
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Home}/{id?}");
+                pattern: "{controller=Task}/{action=HomeTask}/{id?}");
 
             app.Run();
         }
