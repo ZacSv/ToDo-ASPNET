@@ -12,7 +12,8 @@ namespace Tarefas.Controllers
         [HttpGet]
         public IActionResult HomeTask()
         {
-            return View();
+            var tasks = _createTaskService.GetAllTasks();
+            return View(tasks);
         }
         public TaskController(ICreateTaskServices createTaskServices)
         {
