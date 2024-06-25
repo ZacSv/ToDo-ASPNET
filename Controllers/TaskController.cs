@@ -10,11 +10,18 @@ namespace Tarefas.Controllers
 
 
         [HttpGet]
-        public IActionResult HomeTask()
+        public IActionResult CreateTask()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult GetTasks()
         {
             var tasks = _createTaskService.GetAllTasks();
             return View(tasks);
         }
+
         public TaskController(ICreateTaskServices createTaskServices)
         {
             _createTaskService = createTaskServices;
@@ -43,7 +50,7 @@ namespace Tarefas.Controllers
             {
                 Console.WriteLine("Algo deu errado, job abortado");
             }
-            return View("HomeTask");
+            return View("CreateTask");
         }
     }
 }

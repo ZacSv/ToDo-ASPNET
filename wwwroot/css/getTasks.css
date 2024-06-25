@@ -1,0 +1,52 @@
+/* Estilos para a tabela de tarefas */
+.task-table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff; /* Fundo branco */
+}
+
+.task-table thead {
+  background-color: #ff7f3e; /* Laranja queimado */
+  color: #ffffff;
+}
+
+.task-table th,
+.task-table td {
+  padding: 0.7rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.task-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.task-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.task-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ff7f3e;
+}
+
+.task-table tbody tr.tarefa-concluida {
+  background-color: #898989; /* Fundo cinza para tarefa concluída */
+  text-decoration: line-through; /* Linha sobre o texto */
+}
+
+.checkbox-tarefa {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: scale(1); /* Ajusta o tamanho da checkbox */
+  margin-top: 6px;
+}
+
+.task-table td input[type="checkbox"] {
+  margin: 0;
+}

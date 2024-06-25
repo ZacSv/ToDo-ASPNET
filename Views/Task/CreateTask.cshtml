@@ -28,16 +28,7 @@
             <input type="date" id="dataLimiteTarefa" name="TaskDeadline" required />
             <button type="submit">Adicionar Tarefa</button>
         </form>
-        <ul id="listaTarefas">
-            @foreach (var Task in Model)
-            {
-                <li>
-                    <h3>@Task.TaskTittle</h3>
-                    <p>@Task.TaskDescription</p>
-                    <p>Data limite: @Task.TaskDeadline.ToString("dd/MM/yyyy")</p>
-                </li>
-            }
-        </ul>
+        <a href="@Url.Action("GetTasks", "Task")" class="btn btn-primary btn-block">Ver tarefas</a>
     </div>
 </body>
 

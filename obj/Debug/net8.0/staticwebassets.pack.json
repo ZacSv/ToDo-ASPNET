@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\dev\\Tarefas\\wwwroot\\css\\getTasks.css",
+      "PackagePath": "staticwebassets\\css\\getTasks.css"
+    },
+    {
       "Id": "C:\\dev\\Tarefas\\wwwroot\\css\\homeStyles.css",
       "PackagePath": "staticwebassets\\css\\homeStyles.css"
     },

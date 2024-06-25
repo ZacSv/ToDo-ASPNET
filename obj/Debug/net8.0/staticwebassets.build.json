@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ScIKUejPyZN8UaTX0WSoiyRj3eo0k2Pl1l8ZyYbQfWo=",
+  "Hash": "tQOP9gYiGi9xVAb+vYH10eoia4542qug5CUcNg70arE=",
   "Source": "Tarefas",
   "BasePath": "_content/Tarefas",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\dev\\Tarefas\\wwwroot\\css\\getTasks.css",
+      "SourceId": "Tarefas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\dev\\Tarefas\\wwwroot\\",
+      "BasePath": "_content/Tarefas",
+      "RelativePath": "css/getTasks.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\getTasks.css"
+    },
     {
       "Identity": "C:\\dev\\Tarefas\\wwwroot\\css\\homeStyles.css",
       "SourceId": "Tarefas",
